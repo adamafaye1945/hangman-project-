@@ -6,7 +6,6 @@ from numpy import tile
 from back import drawing_the_hangman, prompt, get_word
 import easygui
 
-# getting the word using api
 
 
 # game code
@@ -15,7 +14,7 @@ def word_to_guess(word):
     word_list = list(word)
     
     
-    # creating a hash map in which each letter has in the word is matched with their index in a list like "a : [1,3]"
+    # creating a hash map in which each letter in the word is matched with their index in a list like "a : [1,3]"
     word_hash = {}
     for index in range(len(word_list)):
         if word_list[index] in word_hash.keys():
